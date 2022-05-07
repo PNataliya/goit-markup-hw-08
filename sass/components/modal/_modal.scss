@@ -1,0 +1,56 @@
+/* ==============
+МОДАЛЬНОЕ ОКНО - start
+============== */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    text-align: left;
+    min-width: 528px;
+    min-height: 581px;
+    background-color: $wight-color;
+    box-shadow: $box-shadow-card;
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scaleX(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleX(0);
+
+}
+
+.modal-title {
+    @include modal-title-font;
+    text-align: center;
+    margin-bottom: 12px;
+    color: $title-text-color;
+}
+
+.modal-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.modal-close__svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-close:hover &,
+    .modal-close:focus & {
+    fill: $accent-color;
+}
+}

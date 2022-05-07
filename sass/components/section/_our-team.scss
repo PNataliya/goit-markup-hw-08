@@ -1,0 +1,61 @@
+/* =============================
+SECTION Наша команда - start 
+============================== */
+
+.team-section {
+    @include section;
+    background-color: $bg-color-section;
+}
+
+.container-team {
+    @include container;
+}
+
+.container-team__title {
+    @include title-team-font;
+    margin-bottom: 50px;
+    text-align: center;
+    color: $title-text-color;
+}
+
+.list-covorker {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.list-covorker__item {
+    background-color: $wight-color;
+}
+
+.covorker__box {
+    padding: 30px 15px;
+    box-shadow: $box-shadow-card;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.list-covorker__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.covorker__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: $title-text-color;
+}
+
+.covorker__paragraph {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: $primary-text-color;
+}

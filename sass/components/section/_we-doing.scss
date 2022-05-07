@@ -1,0 +1,45 @@
+/* ============================== 
+SECTION Чем мы занимаемся - start
+=============================== */
+
+.container-doing {
+    @include container;
+}
+
+.container-doing__title {
+    @include title-base;
+    margin-bottom: 50px;
+    text-align: center;
+
+    color: $title-text-color;
+}
+
+.list__specialization {
+    position: relative;
+}
+
+.list__specialization:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.list__card-title {
+    position: absolute;
+    padding: 27px 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $wight-color;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* ==============================
+SECTION Чем мы занимаемся - end 
+=============================== */

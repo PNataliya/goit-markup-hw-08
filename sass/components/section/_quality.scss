@@ -1,0 +1,87 @@
+/* =========================
+SECTION Преимущества - start
+========================== */
+.section-quality {
+    padding-top: 94px;
+    padding-bottom: 0;
+}
+
+.container-quality {
+    @include container;
+
+
+.container-quality__visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+}
+
+
+.list>.list__quality-item {
+    flex-basis: calc(100% / 4 - 30px);
+}
+
+.list__quality-item {
+    margin-right: 30px;
+
+}
+
+.list__quality-item:last-child {
+    margin-right: 0;
+}
+
+/* ==================
+    иконка фон - start
+ ================== */
+
+.list__quality-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: $bg-color-section;
+    border-radius: 4px;
+}
+
+.quality-paragraph {
+    margin: auto;
+}
+
+
+/* ==================
+    иконка фон - end
+ ================== */
+
+.quality-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $title-text-color;
+
+}
+
+.quality-paragraph {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-text-color;
+}
+
+/* =========================
+SECTION Преимущества - end
+========================= */

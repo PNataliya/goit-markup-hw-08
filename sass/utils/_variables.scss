@@ -1,0 +1,122 @@
+// COLORS: BASE styles
+
+$primary-background-color: #e5e5e5;
+$bg-color-section: #F5F4FA;
+$bg-color-hero:#C4C4C4;
+$wight-color: #ffffff;
+$bg-color-portfolio-thumb:rgba(33, 150, 243, 0.9);
+$border-color: #ececec;
+$textarea-color: rgba(117, 117, 117, 0.5);
+$footer-bg-color: #2f303a;
+$footer-contact-color: rgba(255, 255, 255, 0.6);
+$border-portfolio-box: #eeeeee;
+
+
+// TEXT color
+$primary-text-color: #757575;
+$title-text-color: #212121;
+
+// ACCENT color
+$accent-color: #2196f3;
+
+// LOGO color
+$logo-text-color: #000000;
+
+// ICON color
+$bg-icon: #AFB1B8;
+
+// SOCIAL LINK color
+$bg-social-link: rgba(255, 255, 255, 0.1);
+
+// BORDER Header style
+$header-border-bottom: 1px solid $border-color;
+
+
+// BUTTON color
+$bg-color-button-hover: #188CE8;
+
+// SHADOW styles
+$box-shadow-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$box-shadow-active-btn-filter: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
+
+// MODAL  and  CARD
+$box-shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+
+// PORTFOLIO List
+$box-shadow-portfolio-list: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
+
+
+// ===== FONTS =======
+
+// BASE font styles
+$font-family-Base: Roboto, sans-serif;
+$font-family-size: 14px;
+$letter-spacing: 0.03em;
+
+// Navigate font
+$nav-font-weight: 500;
+$nav-font-size: 14px;
+$nav-line-height: 1.14;
+$bav-letter-spacing: 0.02em;
+
+// Navigate font-link
+$nav-Linl-font-weight: 500;
+$nav-Linl-font-size: 14px;
+$nav-Linl-line-height: 1.14;
+$nav-Linl-letter-spacing: 0.02em;
+
+// Header contact-font-link
+$header-link-font-weight: 500;
+$header-link-font-size: 14px;
+$header-link-line-height: 1.14;
+$header-link-letter-spacing: 0.02em;
+
+// Filter button
+$filter-button-font-weight: 500;
+$filter-button-font-size: 16px;
+$filter-button-line-height: 1.62;
+$filter-button-letter-spacing: 0.03em;
+
+// TITLE Hero style
+$title-hero-font-weight: 900;
+$title-hero-font-size: 44px;
+$title-hero-line-height: 1.36;
+$title-hero-letter-spacing: 0.06em;
+
+// TITLE team container
+$title-team-font-weight: 700;
+$title-team-font-size: 36px;
+$title-team-line-height: 1.16;
+
+// TITLE font styles
+$title-font-size: 36px;
+$title-line-height: 1.16;
+
+// TITLE Card style
+$title-card-size: 18px;
+$title-card-height: 2;
+$title-card-letter-spacing: 0.06em;
+
+// LOGO font style
+$font-family-logo: Raleway, sans-serif;
+$font-weight-logo: 700;
+$font-size-logo: 26px;
+$line-height-logo: 1.19;
+$letter-spacing-logo: 0.03em;
+
+// BUTTON font style
+$font-weight-button: 700;
+$font-size-button: 16px;
+$line-height-button: 1.87;
+
+// MODAL title font
+$modal-title-font-weight: 700;
+$modal-title-font-size: 20px;
+$modal-title-line-height: 1.15;
+$modal-title-letter-spacing: 0.03em;

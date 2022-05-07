@@ -1,0 +1,31 @@
+.footer__box {
+    display: list-item;
+}
+
+.address {
+    margin-bottom: 9px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $wight-color;
+}
+
+.contact {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: $footer-contact-color;
+}
+
+.contact__link {
+    margin-bottom: 9px;
+}
+
+.contact__text {
+    font-size: 14px;
+    text-decoration: none;
+    color: $footer-contact-color;
+}

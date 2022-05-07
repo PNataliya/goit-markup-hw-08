@@ -1,0 +1,47 @@
+/* ================== 
+фильтр Кнопки - start
+================== */
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.filter__btn-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+
+.filter__button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    padding: 6px 22px;
+    cursor: pointer;
+    font-family: $font-family-Base;
+    @include filter-button-font;
+    text-align: center;
+    border-radius: 4px;
+
+    color: $title-text-color;
+    background-color: $bg-color-section;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter__button:hover,
+.filter__button:focus {
+    color: $wight-color;
+    background-color: $accent-color;
+    box-shadow: $box-shadow-active-btn-filter;
+}
+
+/* ================ 
+фильтр Кнопки - end
+================ */

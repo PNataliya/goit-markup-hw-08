@@ -1,0 +1,35 @@
+.logo {
+    text-decoration: none;
+    font-family: Raleway,
+    sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-text-color);
+}
+
+.logo--accent {
+    text-decoration: none;
+    color: $accent-color;
+}
+
+/* =========================
+часть лого в Футере 
+========================== */
+.logo--white {
+    display: inline-block;
+    font-family: Raleway,
+    sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: $wight-color;
+}
+
+.navigate>.logo {
+    margin-right: 93px;
+}

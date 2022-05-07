@@ -1,0 +1,39 @@
+body {
+    font-family: $font-family-Base;
+    background-color: $wight-color;
+    letter-spacing: $letter-spacing;
+}
+
+img {
+    display: block;
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container-team__title,
+.hero-container__title,
+.covorker__title,
+.portfolio-title,
+.portfolio-text,
+.quality-title,
+.container-doing__title,
+.container-clients__title,
+.quality-paragraph,
+.not-displayed,
+.futer-title {
+    padding: 0px;
+    margin: 0px;
+}
+

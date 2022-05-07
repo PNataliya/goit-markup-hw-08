@@ -1,0 +1,20 @@
+/* ==========================
+Heder  - start
+=========================== */
+
+.header {
+    border-bottom: $header-border-bottom;
+
+    .header__container {
+        @include container;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+.navigate {
+    display: flex;
+    align-items: center;
+}
