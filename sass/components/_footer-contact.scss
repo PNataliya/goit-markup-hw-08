@@ -2,6 +2,12 @@
     display: list-item;
 }
 
+@media screen and (max-width: 480px) {
+    .footer__box {
+        margin-bottom: 60px;
+    }
+}
+
 .address {
     margin-bottom: 9px;
     font-style: normal;

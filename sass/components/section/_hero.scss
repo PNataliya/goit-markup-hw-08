@@ -7,17 +7,79 @@
 .hero--overlay {
     @include hero-overlay;
 }
+    @media screen and (min-width: 480px) {
+        .hero--overlay {
+            max-width: 480px;
+            padding-top: 118px;
+            padding-bottom: 118px;
+    }
+}
+    
+    @media screen and (min-width: 768px) {
+        .hero--overlay {
+            max-width: 768px;
+            padding-top: 118px;
+            padding-bottom: 118px;
+    }
+}
+    
+    @media screen and (min-width: 1600px) {
+        .hero--overlay {
+            max-width: 1600px;
+            padding-top: 200px;
+            padding-bottom: 200px;
+    }
+}
 
 
-.hero-container {
-    @include container;
 
-    .hero-container__title {
-    margin-top: 0;
-    margin-bottom: 30px;
-    @include title-hero-font;
+    @media screen and (min-width: 480px) {
+        .hero-container {
+            @include container;
+            width: 450px;
+    }
+}
+
+    @media screen and (min-width: 768px) {
+        .hero-container {
+            @include container;
+            width: 738px;
+    }
+}
+
+    @media screen and (min-width: 1600px) {
+        .hero-container {
+            @include container;
+            width: 1200px;
+    }
+}
+
+.hero-container__title {
     color: $wight-color;
-    text-align: center;
-    text-transform: uppercase;
 }
+    .hero-container__title {
+        @media screen and (min-width: 480px) {
+            margin-top: 0;
+            margin-bottom: 30px;
+            @include title-hero-font-mobil;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+        margin-bottom: 30px;
+        @include title-hero-font-tablet;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-top: 0;
+        margin-bottom: 30px;
+        @include title-hero-font;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
+

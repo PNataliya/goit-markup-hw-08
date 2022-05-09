@@ -4,15 +4,20 @@ Heder  - start
 
 .header {
     border-bottom: $header-border-bottom;
+}
 
     .header__container {
         @include container;
-        display: flex;
-        align-items: center;
-    }
-
+margin-left: auto;
+margin-right: auto;
+justify-content: space-between;
+width: 480px;
+width: 100%;
+padding-left: 15px;
+padding-right: 15px;
+align-items: center;
 }
-
+    
 
 .navigate {
     display: flex;

@@ -6,9 +6,21 @@
     margin-right: 70px;
 }
 
+ @media screen and (min-width: 480px) {
+    .footer__box:not(:last-child) {
+        margin-right: 0;
+    }
+ }
+
 .footer-custom {
     margin-left: 32px;
 }
+@media screen and (min-width: 480px) {
+    .footer-custom {
+        margin-left: 0;
+    }
+}
+
 
 .footer-title {
     margin-top: 0;
@@ -22,6 +34,11 @@
     color: $wight-color;
 }
 
+@media screen and (min-width: 480px) {
+    .footer-title {
+        text-align: center;
+    }
+}
 
 /* ======================================== 
 Присоединяйтесь, ссылки на соц сети - start

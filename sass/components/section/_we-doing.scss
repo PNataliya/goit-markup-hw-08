@@ -2,9 +2,41 @@
 SECTION Чем мы занимаемся - start
 =============================== */
 
+
+.section {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        .section {
+        display: block;
+    }
+}
+
 .container-doing {
     @include container;
 }
+
+// @media screen and (min-width: 480px) {
+//     .container-doing {
+//     width: 450px;
+// }
+// }
+
+//  @media screen and (min-width: 768px) {
+//     .container-doing {
+//      width: 738px;
+//  }
+//  }
+
+//  @media screen and (min-width: 1600px) {
+//     .container-doing {
+//      width: 1200px;
+//  }
+// }
+
+
+
 
 .container-doing__title {
     @include title-base;

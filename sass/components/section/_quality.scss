@@ -2,8 +2,8 @@
 SECTION Преимущества - start
 ========================== */
 .section-quality {
-    padding-top: 94px;
-    padding-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .container-quality {
@@ -24,18 +24,48 @@ SECTION Преимущества - start
 }
 }
 
+ @media screen and (min-width: 768px) {
+     .list {
+ align-items: flex-start;
+     }
+ }
 
-.list>.list__quality-item {
-    flex-basis: calc(100% / 4 - 30px);
+
+    @media screen and (min-width: 768px) {
+        .list>.list__quality-item {
+        flex-basis: calc(100% / 2 - 30px);
+        }
+    }
+
+    @media screen and (min-width: 1600px) {
+        .list>.list__quality-item {
+        flex-basis: calc(100% / 4 - 30px);
+    }
 }
 
 .list__quality-item {
-    margin-right: 30px;
+    @media screen and (min-width: 480px) {
+    margin-right: 0;
+    }
 
+    @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-right: 30px;
+        }
 }
 
 .list__quality-item:last-child {
-    margin-right: 0;
+    @media screen and (min-width: 768px) {
+    // margin-right: 30px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-right: 0;
+    }
+    
 }
 
 /* ==================
@@ -43,8 +73,20 @@ SECTION Преимущества - start
  ================== */
 
 .list__quality-item {
+    @media screen and (min-width: 480px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        // margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1600px) {
     margin-right: 30px;
     margin-bottom: 30px;
+    }
 }
 
 .box-icon {
@@ -57,9 +99,7 @@ SECTION Преимущества - start
     border-radius: 4px;
 }
 
-.quality-paragraph {
-    margin: auto;
-}
+
 
 
 /* ==================
@@ -77,6 +117,7 @@ SECTION Преимущества - start
 }
 
 .quality-paragraph {
+    margin: auto;
     font-size: 14px;
     line-height: 1.71;
     color: $primary-text-color;
