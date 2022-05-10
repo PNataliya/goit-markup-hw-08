@@ -7,9 +7,18 @@ SECTION Наша команда - start
     background-color: $bg-color-section;
 }
 
+@media screen and (min-width: 768px) {
+    .team-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
 .container-team {
     @include container;
 }
+
+
 
 .container-team__title {
     @include title-team-font;
