@@ -3,21 +3,21 @@
 ================================ */
 
 .footer__box:not(:last-child) {
-    margin-right: 70px;
+    margin-right: 0;
 }
 
- @media screen and (min-width: 480px) {
+ @media screen and (min-width: 768px) {
     .footer__box:not(:last-child) {
-        margin-right: 0;
+        margin-right: 70px;
     }
  }
 
 .footer-custom {
-    margin-left: 32px;
+    margin-left: 0;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1600px) {
     .footer-custom {
-        margin-left: 0;
+        margin-left: 32px;
     }
 }
 
@@ -29,14 +29,14 @@
     font-size: 14px;
     line-height: 1;
     letter-spacing: 0.03em;
-    text-align: start;
+    text-align: center;
     text-transform: uppercase;
     color: $wight-color;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: px) {
     .footer-title {
-        text-align: center;
+        text-align: start;
     }
 }
 

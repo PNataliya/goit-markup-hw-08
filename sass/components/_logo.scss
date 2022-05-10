@@ -1,5 +1,8 @@
 .logo {
+    display: inline-block;
+    margin-right: auto;
     text-decoration: none;
+    padding: 16px 0;
     font-family: Raleway,
     sans-serif;
     font-weight: 700;
@@ -7,6 +10,19 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: $logo-text-color;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-right: 88px;
+        padding: 26px 0;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .logo {
+        margin-right: 93px;
+    }
 }
 
 .logo--accent {
@@ -30,6 +46,6 @@
     color: $wight-color;
 }
 
-.navigate>.logo {
-    margin-right: 93px;
-}
+// .navigate>.logo {
+//     margin-right: 93px;
+// }
