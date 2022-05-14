@@ -3,16 +3,17 @@ SECTION Наша команда - start
 ============================== */
 
 .team-section {
-    @include section;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $bg-color-section;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1600px) {
     .team-section {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+            @include section;
+        }
 }
+
 
 .container-team {
     @include container;
@@ -27,9 +28,6 @@ SECTION Наша команда - start
     color: $title-text-color;
 }
 
-// .list-covorker {
-//     display: flex;
-// }
 
 
     @media screen and (min-width: 480px) {
@@ -67,6 +65,8 @@ SECTION Наша команда - start
 
 .list-covorker__item {
     background-color: $wight-color;
+    list-style: none;
+    margin-bottom: 30px;
 }
 
 .covorker__box {
@@ -84,13 +84,15 @@ SECTION Наша команда - start
 }
 }
 
-// .list-covorker__item:not(:last-child) {
-//     @media screen and (min-width: 480px) { margin-bottom: 30px;
-//     }
+@media screen and (min-width: 1600px) {
+    .list-covorker__item {
+        flex-basis: calc((100% - 4 * 30px) / 4);
+        cursor: pointer;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+}
 
-//     @media screen and (min-width: 768px) {
-//     margin-right: 30px;
-//     }
 
 // Для выбора всех чётных элементов
 // .list-item:nth-child(2n)

@@ -14,8 +14,15 @@
 
 @media screen and (min-width: 768px) {
     .header-contact {
+        margin-top: 21px;
         flex-direction: column;
-        // margin-left: 84px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .header-contact {
         justify-content: center;
         align-items: flex-start;
     }
@@ -36,6 +43,7 @@
 @media screen and (min-width: 768px) {
     .header-contact__link {
         display: flex;
+        margin-bottom: 10px;
     }
 }
 
@@ -53,20 +61,23 @@
     fill: currentColor;
 }
 
-// @media screen and (min-width: 768px) {
-//     .header-contact {
-//         margin-left: 84px;
-//     }
-// }
 
 @media screen and (min-width: 1600px) {
     .header-contact {
+        display: flex;
+        flex-direction: row;
         margin-left: auto;
     }
 
    .header-contact__list:not(:last-child) {
     margin-right: 30px;
 }
+}
+
+@media screen and (min-width: 1600px) {
+    .header-contact__list {
+        display: block;
+    }
 }
 
 

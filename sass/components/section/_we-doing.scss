@@ -7,9 +7,13 @@ SECTION Чем мы занимаемся - start
         display: none;
     }
 
-    @media screen and (min-width: 1600px) {
+
+
+@media screen and (min-width: 1600px) {
         .section {
-        @include section;
+            display: block;
+            @include section;
+            padding-top: 0;
     }
 }
 

@@ -12,6 +12,7 @@ Heder  - start
   
 @media screen and (min-width: 480px) {  
     .header__container {
+    position: relative;
     justify-content: space-between;
     align-items: center;
 }
@@ -24,16 +25,24 @@ Heder  - start
     }
 }
 
-@media screen and (min-width: 480px) {
+
     .container-nav {
         display: none;
     }
-}
+
 
 @media screen and (min-width: 768px) {
     .container-nav {
         display: flex;
         z-index: 1;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container-nav {
+        display: flex;
+        z-index: 1;
+        flex-basis: 100%;
     }
 }
 

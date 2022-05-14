@@ -3,7 +3,14 @@ SECTION Portfolio - start
 ========================= */
 
 .section-portfolio {
-    @include section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1600px) {
+    .section-portfolio {
+        @include section;
+    }
 }
 
 .section-portfolio__visually-hidden {

@@ -2,12 +2,14 @@
 SECTION Постоянные клиенты - start 
 ================================= */
 .section-clients {
-    @include section
-}
-
-@media screen and (min-width: 768px) { .section-clients {
     padding-top: 60px;
     padding-bottom: 60px;
+    
+}
+
+@media screen and (min-width: 1600px) {
+    .section-clients {
+    @include section
 }
 }
 

@@ -3,7 +3,7 @@ CARD LIST ПОРТФОЛИО - start
 =================================== */
 
 .card-list {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
@@ -11,8 +11,20 @@ CARD LIST ПОРТФОЛИО - start
     margin: 0;
 }
 
+@media screen and (min-width: 768px) {
+    .card-list {
+        display: flex;
+}
+}
+
+@media screen and (min-width: 1600px) {
+    .card-list {
+        display: flex;
+    }
+}
+
+
 .card-list__portfolio {
-    flex-basis: calc(100% / 3 - 30px);
     cursor: pointer;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -20,9 +32,40 @@ CARD LIST ПОРТФОЛИО - start
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
+@media screen and (min-width: 480px) {
+    .card-list__portfolio {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
 
+@media screen and (min-width: 768px) {
+    .card-list__portfolio {
+        margin-left: 0;
+        margin-right: 30px;
+        width: calc((100% - 4 * 15px) / 2);
+    }
+}
+
+
+@media screen and (min-width: 1600px) {
+    .card-list__portfolio {
+        margin-left: auto;
+        margin-right: 30px;
+        flex-basis: calc((100% - 6 * 15px) / 3);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-list__portfolio:nth-child(2n) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
 .card-list__portfolio:nth-child(3n) {
-    margin-right: 0px;
+    margin-right: 30px;
+}
 }
 
 /* =================================== 

@@ -114,8 +114,13 @@ SECTION Преимущества - start
     line-height: 1.14;
     text-transform: uppercase;
     color: $title-text-color;
-
 }
+
+ @media screen and (min-width: 1600px) {
+    .quality-title {
+        text-align: start;
+    }
+ }
 
 .quality-paragraph {
     margin: auto;

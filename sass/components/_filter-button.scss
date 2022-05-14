@@ -6,11 +6,36 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     list-style: none;
     padding: 0;
     margin: 0;
     margin-bottom: 50px;
+}
+
+@media screen and (min-width: 480px) {
+    .filter {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filter {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .filter {
+    justify-content: center;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .filter__btn-item {
+        margin-bottom: 15px;
+    }
 }
 
 .filter__btn-item:not(:last-child) {
