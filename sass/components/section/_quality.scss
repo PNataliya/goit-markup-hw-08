@@ -24,70 +24,40 @@ SECTION Преимущества - start
 }
 }
 
- @media screen and (min-width: 768px) {
-     .list {
- align-items: flex-start;
-     }
- }
-
-
+.list {
+    margin: -15px;
     @media screen and (min-width: 768px) {
-        .list>.list__quality-item {
-        flex-basis: calc(100% / 2 - 30px);
-        }
-    }
-
-    @media screen and (min-width: 1600px) {
-        .list>.list__quality-item {
-        flex-basis: calc(100% / 4 - 30px);
-    }
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+    align-items: stretch;
 }
+}
+
+
 
 .list__quality-item {
-    @media screen and (min-width: 480px) {
-    margin-right: 0;
+    margin: 15px;
+@media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
     }
-
-    @media screen and (min-width: 768px) {
-    margin-right: 30px;
-    }
-
-    @media screen and (min-width: 1600px) {
-        margin-right: 30px;
-        }
 }
-
-.list__quality-item:last-child {
-    @media screen and (min-width: 768px) {
-    // margin-right: 30px;
-    }
-
-    @media screen and (min-width: 1600px) {
-        margin-right: 0;
-    }
     
+@media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);  
 }
+@media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+}
+}
+
 
 /* ==================
     иконка фон - start
  ================== */
 
-.list__quality-item {
-    @media screen and (min-width: 480px) {
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    @media screen and (min-width: 768px) {
-        // margin-right: 30px;
-        margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 1600px) {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    }
-}
 
 .box-icon {
     display: flex;
@@ -114,13 +84,13 @@ SECTION Преимущества - start
     line-height: 1.14;
     text-transform: uppercase;
     color: $title-text-color;
+
+@media screen and (min-width: 1200px) {
+       text-align: start;        
+    }
 }
 
- @media screen and (min-width: 1600px) {
-    .quality-title {
-        text-align: start;
-    }
- }
+ 
 
 .quality-paragraph {
     margin: auto;

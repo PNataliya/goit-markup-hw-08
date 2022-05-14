@@ -23,7 +23,9 @@
         <div class="header__container">
             <!--Навигация-->
            
-            <a class="logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
+            <a class="logo" href="./index.html">
+                <span class="logo--accent">Web</span>Studio
+            </a>
 
                 <!-- КНОПКА бургер меню  -->
             
@@ -31,50 +33,11 @@
                     aria-expanded="false" data-menu-button>
                     <svg class="burger-svg" width="40" height="40" aria-label="Переключатель мобильного меню">
                         <use class="icon-cross is-open" href="./images/icons.svg#icon-close_menu"></use>
-                        <use class="icon-burger" href="./images/icons.svg#icon-burger_menu"></use>
+                        <use class="icon-burger " href="./images/icons.svg#icon-burger_menu"></use>
+                        
                     </svg>
                 </button>
-                    <!-- ============================== -->
-                    <!-- MOBIL MENU - start -->
-                <div class="mobil-container"></div>
-                <div class="backdrop is-hidden" data-modal>
-                    <ul class="mobil">
-                        <li class="mobil-navlist mobil-navlist--current">
-                                <a href="./index.html" class="mobil-navlist__link--active">Студия</a>
-                        </li>
-                
-                        <li class="mobil-navlist mobil-navlist--current"><a href="./portfolio.html"
-                            class="mobil-navlist__link">Портфолио</a></li>
-                        <li class="navlist__site"><a href="" class="mobil-navlist__link">Контакты</a></li>
-                    </ul>
-                    <ul class="header-contact">
-                        <li class="header-contact__list">
-                            <a class="header-contact__link" href="mailto:info@devstudio.com">
-                                <svg class="header-contact__icon" width="16" height="12">
-                                    <use href="./images/icons.svg#icon_envelope"></use>
-                                </svg>
-                                    info@devstudio.com
-                                </a>
-                        </li>
-                        <li class="header-contact__list">
-                            <a class="header-contact__link" href="tel:+380961111111">
-                                <svg class="header-contact__icon" width="10" height="16">
-                                    <use href="./images/icons.svg#icon_smartphone"></use>
-                                </svg>
-                                    +38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>Instagram</li>
-                        <li>Twitter</li>
-                        <li>Facebook</li>
-                        <li>LinkedIn</li>
-                    </ul>
-                </div>
-            
-            <!-- MOBIL MENU - END -->
-        </div>
-           
+                <!-- ============================== --> 
             <div class="container-nav">
                 <nav class="navigate">
                     <ul class="navlist">
@@ -86,6 +49,45 @@
                         <li class="navlist__site"><a href="./portfolio.html" class="navlist__link">Портфолио</a></li>
                         <li class="navlist__site"><a href="" class="navlist__link">Контакты</a></li>
                     </ul>
+                    <!-- MOBIL MENU - start -->
+                    <div class="mobil-container">
+                        <div class="backdrop is-hidden" data-modal>
+                            <ul class="mobil">
+                                <li class="mobil-navlist mobil-navlist--current">
+                                    <a href="./index.html" class="mobil-navlist__link--active">Студия</a>
+                                </li>
+                    
+                                <li class="mobil-navlist mobil-navlist--current"><a href="./portfolio.html"
+                                        class="mobil-navlist__link">Портфолио</a></li>
+                                <li class="navlist__site"><a href="" class="mobil-navlist__link">Контакты</a></li>
+                            </ul>
+                            <ul class="header-contact">
+                                <li class="header-contact__list">
+                                    <a class="header-contact__link" href="mailto:info@devstudio.com">
+                                        <svg class="header-contact__icon" width="16" height="12">
+                                            <use href="./images/icons.svg#icon_envelope"></use>
+                                        </svg>
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                                <li class="header-contact__list">
+                                    <a class="header-contact__link" href="tel:+380961111111">
+                                        <svg class="header-contact__icon" width="10" height="16">
+                                            <use href="./images/icons.svg#icon_smartphone"></use>
+                                        </svg>
+                                        +38 096 111 11 11</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>Instagram</li>
+                                <li>Twitter</li>
+                                <li>Facebook</li>
+                                <li>LinkedIn</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- MOBIL MENU - END -->
                 </nav>
                 <!--Контакты -->
                 <ul class="header-contact">
@@ -105,8 +107,7 @@
                             +38 096 111 11 11</a>
                     </li>
                 </ul>
-            </div>
-           
+            </div>          
         </div>
         
     </header>

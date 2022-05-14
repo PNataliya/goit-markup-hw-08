@@ -8,7 +8,7 @@ SECTION Наша команда - start
     background-color: $bg-color-section;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
     .team-section {
             @include section;
         }

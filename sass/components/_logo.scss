@@ -1,9 +1,9 @@
 .logo {
-    display: inline-block;
-    margin-right: auto;
-    text-decoration: none;
-    padding: 16px;
-    padding-left: 0;
+    // display: inline-block;
+    // margin-right: auto;
+    // text-decoration: none;
+    // padding: 16px;
+    // padding-left: 0;
     font-family: Raleway,
     sans-serif;
     font-weight: 700;
@@ -11,6 +11,10 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: $logo-text-color;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -20,11 +24,6 @@
     }
 }
 
-@media screen and (min-width: 1600px) {
-    .logo {
-        margin-right: 93px;
-    }
-}
 
 .logo--accent {
     text-decoration: none;

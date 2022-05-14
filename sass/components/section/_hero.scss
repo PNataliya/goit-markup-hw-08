@@ -23,7 +23,7 @@
     }
 }
     
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         .hero--overlay {
             max-width: 1600px;
             padding-top: 200px;
@@ -47,7 +47,7 @@
     }
 }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         .hero-container {
             @include container;
             width: 1200px;
@@ -74,7 +74,7 @@
         text-transform: uppercase;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-top: 0;
         margin-bottom: 30px;
         @include title-hero-font;
