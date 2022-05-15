@@ -9,7 +9,6 @@ SECTION Преимущества - start
 .container-quality {
     @include container;
 
-
 .container-quality__visually-hidden {
     position: absolute;
     width: 1px;
@@ -24,33 +23,49 @@ SECTION Преимущества - start
 }
 }
 
-.list {
-    margin: -15px;
+.list-quality {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    @media screen and (min-width: 768px) {
-    align-items: stretch;
-}
-}
-
-
-
-.list__quality-item {
-    margin: 15px;
-@media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-    &:last-child {
-        margin-bottom: 0;
+        gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
     }
 }
+
+
+.list-quality__item {
+@media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
     
-@media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 2 - 30px);  
-}
-@media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 4 - 30px);
-}
+    @media screen and (min-width: 768px) {
+            flex-basis: calc(100% / 2 - 30px);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc(100% / 4 - 30px);
+        }
+// @media screen and (max-width: 767px) {
+//     margin-bottom: 30px;
+//     &:last-child {
+//         margin-bottom: 0;
+//     }
+// }
+    
+// @media screen and (min-width: 768px) {
+//     flex-basis: calc(100% / 2 - 30px);  
+// }
+// @media screen and (min-width: 1200px) {
+//     flex-basis: calc(100% / 4 - 30px);
+// }
 }
 
 
@@ -85,12 +100,11 @@ SECTION Преимущества - start
     text-transform: uppercase;
     color: $title-text-color;
 
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
        text-align: start;        
     }
 }
 
- 
 
 .quality-paragraph {
     margin: auto;
@@ -98,7 +112,3 @@ SECTION Преимущества - start
     line-height: 1.71;
     color: $primary-text-color;
 }
-
-/* =========================
-SECTION Преимущества - end
-========================= */

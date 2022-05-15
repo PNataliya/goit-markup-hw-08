@@ -5,17 +5,13 @@ SECTION Чем мы занимаемся - start
 
 .section {
         display: none;
-    }
-
-
-
-@media screen and (min-width: 1600px) {
-        .section {
+        @media screen and (min-width: 1200px) {
             display: block;
             @include section;
             padding-top: 0;
+        }
     }
-}
+
 
 
 .container-doing {
@@ -31,6 +27,14 @@ SECTION Чем мы занимаемся - start
     color: $title-text-color;
 }
 
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .list__specialization {
     position: relative;
 }

@@ -15,7 +15,7 @@
 .footer-custom {
     margin-left: 0;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
     .footer-custom {
         margin-left: 32px;
     }
@@ -32,6 +32,9 @@
     text-align: center;
     text-transform: uppercase;
     color: $wight-color;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 @media screen and (min-width: px) {
