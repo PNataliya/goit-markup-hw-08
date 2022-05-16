@@ -67,24 +67,17 @@
 // Page Studio
 
 @mixin hero-overlay {
-    // max-width: 1600px;
+max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    // padding-top: 200px;
-    // padding-bottom: 200px;
+    
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-    url(../images/img_main_page/bg_hero_copy.jpeg);
+    url(../images/img_main_page/bg_hero_480.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    @media screen and (min-width: 1200px) {
-        max-width: 1600px;
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
 } 
 
 // TITLE Hero style

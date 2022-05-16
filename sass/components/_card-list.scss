@@ -49,6 +49,16 @@ CARD LIST ПОРТФОЛИО - start
 /* =================================== 
 декоративный overlay на карточку - start
 ==================================== */
+.card-list__link {
+    text-decoration: none;
+    @media screen and (min-width: 768px) {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+}
+
 .portfolio-thumb {
     position: relative;
     display: flex;
@@ -67,6 +77,9 @@ CARD LIST ПОРТФОЛИО - start
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width: 479px) {
+    padding: 20px;       
+    } 
 }
 
 
@@ -75,6 +88,10 @@ CARD LIST ПОРТФОЛИО - start
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: $wight-color;
+
+    @media screen and (max-width: 479px) {
+    font-size: 14px;
+    }
 }
 
 .card-list__portfolio:hover.portfolio-thumb>.box-action,
@@ -93,11 +110,13 @@ CARD LIST ПОРТФОЛИО - start
 }
 
 .portfolio-box {
+   
     padding: 20px 24px;
     border-left: 1px solid $border-portfolio-box;
     border-right: 1px solid $border-portfolio-box;
     border-bottom: 1px solid $border-portfolio-box;
     background-color: $wight-color;
+    flex-grow: 1;
 }
 
 .portfolio-box__title {

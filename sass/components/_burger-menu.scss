@@ -15,17 +15,17 @@
 }
 
 
-.icon-cross {
-    display: none;
+.burger-button .icon-cross {
+    opacity: 0;
 }
 
 .burger-button.is-open .icon-cross {
-    display: block;
+    opacity: 1;
     
 }
 
 .burger-button.is-open .icon-burger {
-    display: none;
+    opacity: 0;
 }
 
 .burger-svg {

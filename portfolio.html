@@ -58,7 +58,7 @@
             <!-- MOBIL MENU - start -->
             <!-- КНОПКА бургер меню  -->
             
-            <button type="button" class="burger-button" data-menu-button>
+            <button type="button" class="burger-button" data-menu-button aria-expanded="false">
                 <svg class="burger-svg" width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="icon-burger" href="./images/icons.svg#icon-burger_menu"></use>
                     <use class="icon-cross" href="./images/icons.svg#icon-close_menu"></use>
@@ -75,18 +75,12 @@
                     <li class="mobil-menu-nav__list"><a href="" class="mobil-menu-nav__link">Контакты</a></li>
                 </ul>
                 <ul class="mobil-menu-contact">
-                    <li class="mobil-menu-contact__list--activ">
-                        <a class="mobil-menu-contact__link--activ" href="tel:+380961111111">
-                            <svg class="mobil-menu-contact__icon" width="10" height="16">
-                                <use href="./images/icons.svg#icon_smartphone"></use>
-                            </svg>
+                    <li class="mobil-menu-contact__list">
+                        <a class="mobil-menu-contact__link" href="tel:+380961111111">
                             +38 096 111 11 11</a>
                     </li>
                     <li class="mobil-menu-contact__list">
                         <a class="mobil-menu-contact__link" href="mailto:info@devstudio.com">
-                            <svg class="mobil-menu-contact__icon" width="16" height="12">
-                                <use href="./images/icons.svg#icon_envelope"></use>
-                            </svg>
                             info@devstudio.com
                         </a>
                     </li>
@@ -136,8 +130,20 @@
                 ============================= -->
                 <ul class="card-list">
                     <li class="card-list__portfolio">
+                        <a class="card-list__link" href="">    
                         <div class="portfolio-thumb">
-                            <img class="portfolio-thumb__photo" width="370" height="294" src="./images/img_portfolio_page/1_notebook.jpg" alt="Ноутбук">
+                            <picture>
+                                <source
+                                    srcset="./images/img_portfolio_page/1_notebook_1200.jpeg 1x, ./images/img_portfolio_page/1_notebook_1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)" type="image/jpeg">
+                                <source
+                                    srcset="./images/img_portfolio_page/1_notebook_768 .jpeg 1x, ./images/img_portfolio_page/1_notebook_768@2x.jpeg 2x"
+                                    media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./images/img_portfolio_page/1_notebook._480@2x.jpg 2x" media="(min-width: 480px)" type="image/jpeg">
+                                <img class="portfolio-thumb__photo" width="450" height="294" src="./images//img_portfolio_page/1_notebook._480.jpg"
+                                    alt="Ноутбук">
+                            </picture>
+                           
         <!-- // декоративный overlay на карточку  - start // -->
                             <div class="box-action">
                                 <p class="box-action__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
@@ -150,14 +156,25 @@
                             <h2 class="portfolio-box__title">Технокряк</h2>
                             <p class="portfolio-box__text">Веб-сайт</p>
                         </div>
+                        </a>
                     </li>
                     <!-- ============================
                          Карточка 1 - END
                     ============================= -->
                     <li class="card-list__portfolio">
+                        <a class="card-list__link" href="">
                         <div class="portfolio-thumb">
-                            <img class="portfolio-thumb__photo" width="370" height="294" src="./images/img_portfolio_page/4_basketball.jpg"
-                                alt="Баскетболисты">
+                            <picture>
+                                <source
+                                    srcset="./images/img_portfolio_page/2_basketball_1200.jpeg 1x, ./images/img_portfolio_page/2_basketball_1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)" type="image/jpeg">
+                                <source
+                                    srcset="./images/img_portfolio_page/2_basketball_1200.jpeg 1x, ./images/img_portfolio_page/2_basketball_768@2x.jpeg 2x"
+                                    media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./images/img_portfolio_page/2_basketball_480@2x.jpeg 2x" media="(min-width: 480px)" type="image/jpeg">
+                                <img class="portfolio-thumb__photo" width="450" height="294" src="./images/img_portfolio_page/2_basketball_480.jpeg"
+                                    alt="Баскетболисты">
+                            </picture>
                             <div class="box-action">
                                 <p class="box-action__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов. Все
@@ -169,12 +186,25 @@
                             <h2 class="portfolio-box__title">Постер New Orlean vs Golden Star</h2>
                             <p class="portfolio-box__text">Дизайн</p>
                         </div>
+                        </a>
                     </li>
                     <!-- ============================================ -->
                     <li class="card-list__portfolio">
+                        <a class="card-list__link" href="">
                         <div class="portfolio-thumb">
-                            <img class="portfolio-thumb__photo" width="370" height="294" src="./images/img_portfolio_page/7_seafood.jpg"
-                                alt="Морепродукты">
+                            <picture>
+                                <source
+                                    srcset="./images/img_portfolio_page/3_seafood_1200.jpeg 1x, ./images/img_portfolio_page/3_seafood_1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)" type="image/jpeg">
+                                <source
+                                    srcset="./images/img_portfolio_page/3_seafood_768.jpeg 1x, ./images/img_portfolio_page/3_seafood_768@2x.jpeg 2x"
+                                    media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./images/img_portfolio_page/3_seafood_480@2x.jpeg 2x" media="(min-width: 480px)"
+                                    type="image/jpeg">
+                                <img class="portfolio-thumb__photo" width="450" height="294" src="./images/img_portfolio_page/3_seafood_480.jpeg"
+                                    alt="Морепродукты">
+                            </picture>
+                            
                             <div class="box-action">
                                 <p class="box-action__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов. Все
@@ -186,11 +216,22 @@
                             <h2 class="portfolio-box__title">Ресторан Seafood</h2>
                             <p class="portfolio-box__text">Приложение</p>
                         </div>
+                        </a>
                     </li>
                     <!-- ===================================== -->
                     <li class="card-list__portfolio">
+                        <a class="card-list__link" href="">
                         <div class="portfolio-thumb">
-                            <img class="portfolio-thumb__photo" width="370" height="294" src="./images/img_portfolio_page/2_headphones.jpg" alt="Наушники">
+                            <picture>
+                            <source
+                                srcset="./images/img_portfolio_page/4_headphones_1200.jpeg 1x, ./images/img_portfolio_page/4_headphones_1200@2x.jpeg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg">
+                            <source srcset="./images/img_portfolio_page/4_headphones_768.jpeg 1x, ./images/img_portfolio_page/4_headphones_768@2x.jpeg 2x"
+                                media="(min-width: 768px)" type="image/jpeg">
+                            <source srcset="./images/img_portfolio_page/4_headphones_480@2x.jpeg 2x" media="(min-width: 480px)" type="image/jpeg">
+                            <img class="portfolio-thumb__photo" width="450" height="294" src="./images/img_portfolio_page/4_headphones_480.jpeg"
+                                alt="Наушники">
+                            </picture>
                             <div class="box-action">
                                 <p class="box-action__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
@@ -201,12 +242,25 @@
                             <h2 class="portfolio-box__title">Проект Prime</h2>
                             <p class="portfolio-box__text">Маркетинг</p>
                         </div>
+                        </a>
                     </li>
                     <!-- ================================ -->
                     <li class="card-list__portfolio">
+                        <a class="card-list__link" href="">
                         <div class="portfolio-thumb">
-                            <img class="portfolio-thumb__photo" width="370" height="294" src="./images/img_portfolio_page/5_boxes.jpg"
+                            <picture>
+                                <source
+                                    srcset="./images/img_portfolio_page/5_boxes_1200.jpeg 1x, ./images/img_portfolio_page/5_boxes_1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)" type="image/jpeg">
+                                <source
+                                    srcset="./images/img_portfolio_page/5_boxes_768.jpeg 1x, ./images/img_portfolio_page/5_boxes_768@2x.jpeg 2x"
+                                    media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./images/img_portfolio_page/5_boxes_480@2x.jpeg 2x" media="(min-width: 480px)"
+                                    type="image/jpeg">
+                            <img class="portfolio-thumb__photo" width="450" height="294" src="./images/img_portfolio_page/5_boxes_480.jpeg"
                                 alt="Коробки">
+                            </picture>
+                            
                             <div class="box-action">
                                 <p class="box-action__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов. Все
@@ -218,12 +272,23 @@
                             <h2 class="portfolio-box__title">Проект Boxes</h2>
                             <p class="portfolio-box__text">Приложение</p>
                         </div>
+                        </a>
                     </li>
                     <!-- =================================== -->
                     <li class="card-list__portfolio">
+                        <a class="card-list__link" href="">
                         <div class="portfolio-thumb">
-                            <img class="portfolio-thumb__photo" width="370" height="294"
-                                src="./images/img_portfolio_page/8_screen_computer.jpg" alt="Экран компьютера">
+                            <picture>
+                                <source
+                                    srcset="./images/img_portfolio_page/6_screen_computer_1200.jpeg 1x, ./images/img_portfolio_page/6_screen_computer_1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)" type="image/jpeg">
+                                <source srcset="./images/img_portfolio_page/6_screen_computer_768.jpeg 1x, ./images/img_portfolio_page/6_screen_computer_768@2x.jpeg 2x"
+                                    media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./images/img_portfolio_page/6_screen_computer_480@2x.jpeg 2x" media="(min-width: 480px)" type="image/jpeg">
+                                <img class="portfolio-thumb__photo" width="450" height="294" src="./images/img_portfolio_page/6_screen_computer_480.jpeg"
+                                    alt="Экран компьютера">
+                            </picture>
+                           
                             <div class="box-action">
                                 <p class="box-action__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов. Все
@@ -235,11 +300,24 @@
                             <h2 class="portfolio-box__title">Inspiration has no Borders</h2>
                             <p class="portfolio-box__text">Веб-сайт</p>
                         </div>
+                        </a>
                     </li>
                     <!-- ======================================= -->
                     <li class="card-list__portfolio">
+                        <a class="card-list__link" href="">
                         <div class="portfolio-thumb">
-                            <img class="portfolio-thumb__photo" width="370" height="294" src="./images/img_portfolio_page/3_book.jpg" alt="Книга">
+                            <picture>
+                                <source
+                                    srcset="./images/img_portfolio_page/7_book_1200.jpeg 1x, ./images/img_portfolio_page/7_book_1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)" type="image/jpeg">
+                                <source
+                                    srcset="./images/img_portfolio_page/7_book_768.jpeg 1x, ./images/img_portfolio_page/7_book_768@2x.jpeg 2x"
+                                    media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./images/img_portfolio_page/7_book_480@2x.jpeg 2x" media="(min-width: 480px)"
+                                    type="image/jpeg">
+                                <img class="portfolio-thumb__photo" width="450" height="294" src="./images/img_portfolio_page/7_book_480.jpeg" alt="Книга">
+                            </picture>
+                           
                             <div class="box-action">
                                 <p class="box-action__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
@@ -250,12 +328,22 @@
                             <h2 class="portfolio-box__title">Издание Limited Edition</h2>
                             <p class="portfolio-box__text">Дизайн</p>
                         </div>
+                        </a>
                     </li>
                     <!-- ================================= -->
                                   
                     <li class="card-list__portfolio">
+                        <a class="card-list__link" href="">
                         <div class="portfolio-thumb">
-                            <img class="portfolio-thumb__photo" width="370" height="294" src="./images/img_portfolio_page/6_label.jpg" alt="Лейба">
+                            <picture>
+                                <source srcset="./images/img_portfolio_page/8_label_1200.jpeg 1x, ./images/img_portfolio_page/8_label_1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)" type="image/jpeg">
+                                <source srcset="./images/img_portfolio_page/8_label_768.jpeg 1x, ./images/img_portfolio_page/8_label_768@2x.jpeg 2x"
+                                    media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./images/img_portfolio_page/8_label_480@2x.jpeg 2x" media="(min-width: 480px)" type="image/jpeg">
+                            <img class="portfolio-thumb__photo" width="450" height="294" src="./images/img_portfolio_page/8_label_480.jpeg" alt="Лейба">
+                            </picture>
+                            
                             <div class="box-action">
                                 <p class="box-action__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
@@ -266,14 +354,25 @@
                             <h2 class="portfolio-box__title">Проект LAB</h2>
                             <p class="portfolio-box__text">Маркетинг</p>
                         </div>
+                        </a>
                     </li>
                     <!-- ===================================== -->
                     
                     <!-- ===================================== -->
                    
                     <li class="card-list__portfolio">
+                        <a class="card-list__link" href="">
                         <div class="portfolio-thumb">
-                            <img class="portfolio-thumb__photo" width="370" height="294" src="./images/img_portfolio_page/9_hands.jpg" alt="Руки">
+                            <picture>
+                                <source
+                                    srcset="./images/img_portfolio_page/9_hands_1200.jpeg 1x, ./images/img_portfolio_page/9_hands_1200@2x.jpeg 2x"
+                                    media="(min-width: 1200px)" type="image/jpeg">
+                                <source srcset="./images/img_portfolio_page/9_hands_768.jpeg 2x, ./images/img_portfolio_page/9_hands_768@2x.jpeg 2x"
+                                    media="(min-width: 768px)" type="image/jpeg">
+                                <source srcset="./images/img_portfolio_page/9_hands_480@2x.jpeg 2x" media="(min-width: 480px)" type="image/jpeg">
+                                <img class="portfolio-thumb__photo" width="450" height="294" src="./images/img_portfolio_page/9_hands_480.jpeg" alt="Руки">
+                            </picture>
+    
                             <div class="box-action">
                                 <p class="box-action__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
@@ -284,6 +383,7 @@
                             <h2 class="portfolio-box__title">Growing Business</h2>
                             <p class="portfolio-box__text">Приложение</p>
                         </div>
+                        </a>
                     </li>
                     <!-- ====================================== -->
                 </ul>
