@@ -23,9 +23,10 @@
         <div class="header__container">
             <!--Навигация-->
             <a class="logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
+
             <div class="container-nav">
                 <nav class="navigate">
-                    <ul class="list">
+                    <ul class="navlist">
         
                         <li class="navlist__site">
                             <a href="./index.html" class="navlist__link">Студия</a>
@@ -54,6 +55,60 @@
                     </li>
                 </ul>
             </div>
+            <!-- MOBIL MENU - start -->
+            <!-- КНОПКА бургер меню  -->
+            
+            <button type="button" class="burger-button" data-menu-button>
+                <svg class="burger-svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-burger" href="./images/icons.svg#icon-burger_menu"></use>
+                    <use class="icon-cross" href="./images/icons.svg#icon-close_menu"></use>
+                </svg>
+            </button>
+            <!-- ============================== -->
+            <div class="mobil-container" data-modal>
+                <ul class="mobil-menu-nav">
+                    <li class="mobil-menu-nav__list">
+                        <a href="./index.html" class="mobil-menu-nav__link">Студия</a>
+                    </li>
+            
+                    <li class="mobil-menu-nav__list"><a href="./portfolio.html" class="mobil-menu-nav__link--active">Портфолио</a></li>
+                    <li class="mobil-menu-nav__list"><a href="" class="mobil-menu-nav__link">Контакты</a></li>
+                </ul>
+                <ul class="mobil-menu-contact">
+                    <li class="mobil-menu-contact__list--activ">
+                        <a class="mobil-menu-contact__link--activ" href="tel:+380961111111">
+                            <svg class="mobil-menu-contact__icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon_smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mobil-menu-contact__list">
+                        <a class="mobil-menu-contact__link" href="mailto:info@devstudio.com">
+                            <svg class="mobil-menu-contact__icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon_envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+            
+                </ul>
+                <ul class="mobil-social">
+                    <li class="mobil-social__item">
+                        <a class="mobil-social__link" href="https://instagram.com"></a>Instagram
+                    </li>
+                    <li class="mobil-social__item">
+                        <a class="mobil-social__link" href="https://twitter.com"></a>Twitter
+                    </li>
+                    <li class="mobil-social__item">
+                        <a class="mobil-social__link" href="https://facebook.com"></a>Facebook
+                    </li>
+                    <li class="mobil-social__item">
+                        <a class="mobil-social__link" href="https://linkedin.com"></a>LinkedIn
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- MOBIL MENU - END -->
         </div>
     
     </header>

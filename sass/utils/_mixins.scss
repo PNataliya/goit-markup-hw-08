@@ -79,6 +79,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 } 
 
 // TITLE Hero style
