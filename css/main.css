@@ -574,11 +574,8 @@ Heder  - start
 }
 
 .hero--overlay {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_main_page/bg_hero_480.jpeg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_main_page/bg_hero_480.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -597,6 +594,7 @@ Heder  - start
 }
 @media screen and (min-width: 1200px) {
   .hero--overlay {
+    max-width: 1600;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_main_page/bg_hero_1600.jpeg);
@@ -610,13 +608,13 @@ Heder  - start
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_main_page/bg_hero_480@2x.jpeg);
   }
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), (max-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), (min-width: 768px) {
   .hero--overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_main_page/bg_hero_768@2x.jpeg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_main_page/bg_hero_768@2x.jpeg);
   }
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), (max-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), (min-width: 1200px) {
   .hero--overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_main_page/bg_hero_1600@2x.jpeg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_main_page/bg_hero_1600@2x.jpeg);
@@ -1911,7 +1909,7 @@ SECTION Постоянные клиенты - end
 
 .footer-input {
   font-family: inherit;
-  width: 450px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   margin-right: 12px;
@@ -1925,6 +1923,11 @@ SECTION Постоянные клиенты - end
 @media screen and (max-width: 767px) {
   .footer-input {
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-input {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
