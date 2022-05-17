@@ -100,7 +100,6 @@ Heder  - start
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,7 +629,6 @@ Heder  - start
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red;
     width: 450px;
   }
 }
@@ -651,7 +649,6 @@ Heder  - start
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red;
     width: 738px;
   }
 }
@@ -672,7 +669,6 @@ Heder  - start
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red;
     width: 1200px;
   }
 }
@@ -1129,7 +1125,6 @@ SECTION Преимущества - start
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .container-quality {
@@ -1263,7 +1258,6 @@ SECTION Чем мы занимаемся - start
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .container-doing {
@@ -1348,7 +1342,6 @@ SECTION Наша команда - start
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .container-team {
@@ -1533,7 +1526,6 @@ SECTION Постоянные клиенты - start
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .container-clients {
@@ -1664,7 +1656,6 @@ SECTION Постоянные клиенты - end
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
   list-style: none;
 }
 @media screen and (min-width: 768px) {
@@ -2030,7 +2021,6 @@ SECTION Portfolio - start
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 768px) {
   .container-portfolio {
