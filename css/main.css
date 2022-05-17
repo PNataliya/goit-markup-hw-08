@@ -234,7 +234,7 @@ Heder  - start
   }
 }
 
-.mobil-container .is-open {
+.mobil-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
