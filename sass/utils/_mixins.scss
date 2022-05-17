@@ -1,140 +1,126 @@
-
 @mixin section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-@mixin container { 
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+@mixin container {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
-    
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
-
 
 @mixin visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    
-} 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 // Navigate font
 @mixin navigate-font {
-    font-weight: $nav-font-weight;
-    font-size: $nav-font-size;
-    line-height: $nav-line-height;
-    letter-spacing: $bav-letter-spacing;
+  font-weight: $nav-font-weight;
+  font-size: $nav-font-size;
+  line-height: $nav-line-height;
+  letter-spacing: $bav-letter-spacing;
 }
 
 // Navigate font-link
 @mixin nav-font-link {
-    font-weight: $nav-Linl-font-weight;
-    font-size: $nav-Linl-font-size;
-    line-height: $nav-Linl-line-height;
-    letter-spacing: $nav-Linl-letter-spacing;
-    
+  font-weight: $nav-Linl-font-weight;
+  font-size: $nav-Linl-font-size;
+  line-height: $nav-Linl-line-height;
+  letter-spacing: $nav-Linl-letter-spacing;
 }
 
 // Header contact-font-link
 @mixin header-contact-font-link {
-    font-weight: $header-link-font-weight;
-    font-size: $header-link-font-size;
-    line-height: $header-link-line-height;
-    letter-spacing: $header-link-letter-spacing;  
+  font-weight: $header-link-font-weight;
+  font-size: $header-link-font-size;
+  line-height: $header-link-line-height;
+  letter-spacing: $header-link-letter-spacing;
 }
-
 
 // Page Studio
 
 @mixin hero-overlay {
-// max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    // background-image: linear-gradient(to right,
-    //     rgba(47, 48, 58, 0.4),
-    //     rgba(47, 48, 58, 0.4)),
-    // url(../images/img_main_page/bg_hero_480.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-} 
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 // TITLE Hero style
 @mixin title-hero-font-mobil {
-    font-weight: $title-hero-font-mobil-weight;
-    font-size: $title-hero-font-mobil-size;
-    line-height: $title-hero-font-mobil-line-height;
-    letter-spacing: $title-hero-font-mobil-letter-spacing;
+  font-weight: $title-hero-font-mobil-weight;
+  font-size: $title-hero-font-mobil-size;
+  line-height: $title-hero-font-mobil-line-height;
+  letter-spacing: $title-hero-font-mobil-letter-spacing;
 }
 
 @mixin title-hero-font-tablet {
-    font-weight: $title-hero-font-tablet-weight;
-    font-size: $title-hero-font-tablet-size;
-    line-height: $title-hero-font-tablet-line-height;
-    letter-spacing: $title-hero-font-tablet-letter-spacing;
+  font-weight: $title-hero-font-tablet-weight;
+  font-size: $title-hero-font-tablet-size;
+  line-height: $title-hero-font-tablet-line-height;
+  letter-spacing: $title-hero-font-tablet-letter-spacing;
 }
 @mixin title-hero-font {
-    font-weight: $title-hero-font-weight;
-    font-size: $title-hero-font-size;
-    line-height: $title-hero-line-height;
-    letter-spacing: $title-hero-letter-spacing;
+  font-weight: $title-hero-font-weight;
+  font-size: $title-hero-font-size;
+  line-height: $title-hero-line-height;
+  letter-spacing: $title-hero-letter-spacing;
 }
 
 // MODAL title font
 @mixin modal-title-font {
-    font-weight: $modal-title-font-weight;
-    font-size: $modal-title-font-size;
-    line-height: $modal-title-line-height;
-    letter-spacing: $modal-title-letter-spacing;
+  font-weight: $modal-title-font-weight;
+  font-size: $modal-title-font-size;
+  line-height: $modal-title-line-height;
+  letter-spacing: $modal-title-letter-spacing;
 }
 
-
 @mixin title-base {
-        font-size: $title-font-size;
-        line-height: $title-line-height;
-        color: $title-text-color;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  color: $title-text-color;
 }
 
 // TITLE team container
 @mixin title-team-font {
-    font-weight: $title-team-font-weight;
-    font-size: $title-team-font-size;
-    line-height: $title-team-line-height;  
+  font-weight: $title-team-font-weight;
+  font-size: $title-team-font-size;
+  line-height: $title-team-line-height;
 }
-
 
 // Page Portfolio
 
 // Filter button font
 @mixin filter-button-font {
-    font-weight: $filter-button-font-weight;
-    font-size: $filter-button-font-size;
-    line-height: $filter-button-line-height;
-    letter-spacing: $filter-button-letter-spacing;
+  font-weight: $filter-button-font-weight;
+  font-size: $filter-button-font-size;
+  line-height: $filter-button-line-height;
+  letter-spacing: $filter-button-letter-spacing;
 }
 
-
 @mixin portfolio-box-titled {
-    font-size: $title-card-size;
-    line-height: $title-card-height;        letter-spacing: $title-card-letter-spacing;
-    color: $title-text-color;
+  font-size: $title-card-size;
+  line-height: $title-card-height;
+  letter-spacing: $title-card-letter-spacing;
+  color: $title-text-color;
 }

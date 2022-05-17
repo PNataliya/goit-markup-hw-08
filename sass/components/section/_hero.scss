@@ -1,121 +1,141 @@
 .hero {
-    @include section;
-    background-color: $bg-color-hero;
-    text-align: center;
+  @include section;
+  background-color: $bg-color-hero;
+  text-align: center;
 }
 
 .hero--overlay {
-    @include hero-overlay;
+  @include hero-overlay;
 
-@media screen and (min-width: 768px) {
-    background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../images/img_main_page/bg_hero_768.jpeg);
-}
-@media screen and (max-width: 1199px) {
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img_main_page/bg_hero_480.jpeg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    (max-width: 480px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img_main_page/bg_hero_480@2x.jpeg);
+  }
+
+  @media screen and (max-width: 1199px) {
     padding-top: 118px;
     padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero--overlay {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img_main_page/bg_hero_768.jpeg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    (min-width: 481px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img_main_page/bg_hero_768@2x.jpeg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    max-width: 1600;
-        padding-top: 200px;
-        padding-bottom: 200px;
-        background-image: linear-gradient(to right,
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url(../images/img_main_page/bg_hero_1600.jpeg);
-    }
-}
+  .hero--overlay {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img_main_page/bg_hero_1600.jpeg);
+  }
 
-
-    @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx), (max-width: 767px) {
-        .hero--overlay {           
-            background-image: linear-gradient(to right,
-                        rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),
-                    url(../images/img_main_page/bg_hero_480@2x.jpeg);
-    }
+    screen and (min-resolution: 2dppx),
+    (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img_main_page/bg_hero_1600@2x.jpeg);
+  }
 }
 
- @media screen and (min-device-pixel-ratio: 2),
- screen and (min-resolution: 192dpi),
- screen and (min-resolution: 2dppx),
- (min-width: 768px) {
-     .hero--overlay {
-         background-image: linear-gradient(to right,
-                 rgba(47, 48, 58, 0.4),
-                 rgba(47, 48, 58, 0.4)),
-             url(../images/img_main_page/bg_hero_768@2x.jpeg);
-     }
- }
-
- @media screen and (min-device-pixel-ratio: 2),
- screen and (min-resolution: 192dpi),
- screen and (min-resolution: 2dppx),
- (min-width: 1200px) {
-     .hero--overlay {
-         background-image: linear-gradient(to right,
-                 rgba(47, 48, 58, 0.4),
-                 rgba(47, 48, 58, 0.4)),
-             url(../images/img_main_page/bg_hero_1600@2x.jpeg);
-     }
- }
-    
-  
-
-
-
-    @media screen and (min-width: 480px) {
-        .hero-container {
-            @include container;
-            width: 450px;
-    }
+@media screen and (min-width: 480px) {
+  .hero-container {
+    @include container;
+    width: 450px;
+  }
 }
 
-    @media screen and (min-width: 768px) {
-        .hero-container {
-            @include container;
-            width: 738px;
-    }
+@media screen and (min-width: 768px) {
+  .hero-container {
+    @include container;
+    width: 738px;
+  }
 }
 
-    @media screen and (min-width: 1200px) {
-        .hero-container {
-            @include container;
-            width: 1200px;
-    }
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    @include container;
+    width: 1200px;
+  }
 }
 
 .hero-container__title {
-    color: $wight-color;
-}
-    .hero-container__title {
-        @media screen and (min-width: 480px) {
-            margin-top: 0;
-            margin-bottom: 30px;
-            @include title-hero-font-mobil;
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-    @media screen and (min-width: 768px) {
-        margin-top: 0;
-        margin-bottom: 30px;
-        @include title-hero-font-tablet;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-top: 0;
-        margin-bottom: 30px;
-        @include title-hero-font;
-        text-align: center;
-        text-transform: uppercase;
-    }
+  color: $wight-color;
 }
 
+.hero-container__title {
+  @media screen and (min-width: 480px) {
+    margin-top: 0;
+    margin-bottom: 30px;
+    @include title-hero-font-mobil;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 30px;
+    @include title-hero-font-tablet;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-bottom: 30px;
+    @include title-hero-font;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
