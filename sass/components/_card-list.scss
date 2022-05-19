@@ -89,8 +89,8 @@ CARD LIST ПОРТФОЛИО - start
   }
 }
 
-.card-list__portfolio:hover.portfolio-thumb > .box-action,
-.card-list__portfolio:hover .portfolio-thumb > .box-action {
+.card-list__link:hover.portfolio-thumb > .box-action,
+.card-list__link:hover .portfolio-thumb > .box-action {
   opacity: 1;
   transform: translateY(0);
 }
@@ -99,8 +99,8 @@ CARD LIST ПОРТФОЛИО - start
 декоративный overlay на карточку - END
 ==================================== */
 
-.card-list__portfolio:hover,
-.card-list__portfolio:focus {
+.card-list__link:hover,
+.card-list__link:focus {
   box-shadow: $box-shadow-portfolio-list;
 }
 

@@ -3,61 +3,42 @@ Heder  - start
 =========================== */
 
 .header {
-    border-bottom: $header-border-bottom;
+  border-bottom: $header-border-bottom;
 }
 
-    .header__container {
-        @include container;
-        display: flex;
-        align-items: center;
-        @media screen and (min-width: 768px) {
-            display: flex;
-            align-items: center;
-        }
-        
+.header__container {
+  @include container;
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
-  
-// @media screen and (min-width: 480px) {  
-//     .header__container {
-//     position: relative;
-//     justify-content: space-between;
-//     align-items: center;
-// }
-// }
 
-// @media screen and (min-width: 768px) {
-//     .header__container {
-//         display: flex;
-//         align-items: center;
-//     }
-// }
-
-
-    .container-nav {
-        display: none;
-    }
-
+.container-nav {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
-    .container-nav {
-        display: flex;
-        align-items: center;
-        z-index: 1;
-    }
+  .container-nav {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .container-nav {
-        display: flex;
-        z-index: 1;
-        flex-basis: 100%;
-    }
+  .container-nav {
+    display: flex;
+    z-index: 1;
+    flex-basis: 100%;
+  }
 }
 
 @media screen and (min-width: 480px) {
-.navigate {
+  .navigate {
     display: flex;
     align-items: center;
+  }
 }
-}
-

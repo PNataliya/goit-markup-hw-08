@@ -3,68 +3,57 @@
 ================== */
 
 .filter {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 50px;
-}
-
-@media screen and (min-width: 480px) {
-    .filter {
-        margin-bottom: 40px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .filter {
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
     justify-content: center;
-    }
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
-@media screen and (min-width: 480px) {
-    .filter__btn-item {
-        margin-bottom: 15px;
-    }
+@media screen and (max-width: 767px) {
+  .filter__btn-item {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__btn-item:not(:last-child) {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
-
 .filter__button {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    border: none;
-    padding: 6px 22px;
-    cursor: pointer;
-    font-family: $font-family-Base;
-    @include filter-button-font;
-    text-align: center;
-    border-radius: 4px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  padding: 6px 22px;
+  cursor: pointer;
+  font-family: $font-family-Base;
+  @include filter-button-font;
+  text-align: center;
+  border-radius: 4px;
 
-    color: $title-text-color;
-    background-color: $bg-color-section;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $title-text-color;
+  background-color: $bg-color-section;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter__button:hover,
 .filter__button:focus {
-    color: $wight-color;
-    background-color: $accent-color;
-    box-shadow: $box-shadow-active-btn-filter;
+  color: $wight-color;
+  background-color: $accent-color;
+  box-shadow: $box-shadow-active-btn-filter;
 }
 
 /* ================ 

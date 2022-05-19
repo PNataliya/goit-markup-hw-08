@@ -295,6 +295,12 @@ Heder  - start
   display: flex;
   gap: 10px;
 }
+@media screen and (max-width: 479px) {
+  .mobil-social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .mobil-social__item {
   display: -webkit-box;
@@ -582,7 +588,7 @@ Heder  - start
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_main_page/bg_hero_480.jpeg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_main_page/bg_hero_480.jpeg);
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), (max-width: 479px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), (max-width: 767px) {
   .hero--overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_main_page/bg_hero_480@2x.jpeg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_main_page/bg_hero_480@2x.jpeg);
@@ -596,99 +602,56 @@ Heder  - start
 }
 @media screen and (min-width: 1200px) {
   .hero--overlay {
-    max-width: 1600;
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero--overlay {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_main_page/bg_hero_768.jpeg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_main_page/bg_hero_768.jpeg);
   }
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), (min-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), (min-width: 768px) {
   .hero--overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_main_page/bg_hero_768@2x.jpeg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_main_page/bg_hero_768@2x.jpeg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero--overlay {
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_main_page/bg_hero_1600.jpeg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_main_page/bg_hero_1600.jpeg);
   }
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), (min-width: 1200px) {
   .hero--overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_main_page/bg_hero_1600@2x.jpeg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_main_page/bg_hero_1600@2x.jpeg);
   }
 }
 
-@media screen and (min-width: 480px) {
-  .hero-container {
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 450px;
-  }
-}
-@media screen and (min-width: 480px) and (min-width: 768px) {
-  .hero-container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 480px) and (min-width: 1200px) {
-  .hero-container {
-    max-width: 1200px;
-  }
+.hero-container {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .hero-container {
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 738px;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 768px) {
-  .hero-container {
     max-width: 768px;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .hero-container {
-    max-width: 1200px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-container {
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1200px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-width: 768px) {
-  .hero-container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
-  .hero-container {
     max-width: 1200px;
   }
 }
+
 .hero-container__title {
+  margin-bottom: 30px;
   color: #ffffff;
 }
 
@@ -1713,17 +1676,31 @@ SECTION Постоянные клиенты - end
   }
 }
 
+.footer__list {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    margin-bottom: 0;
+  }
+}
+
 .footer__box {
-  display: list-item;
+  margin-bottom: 60px;
 }
 @media screen and (max-width: 767px) {
+  .footer__box:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
   .footer__box {
-    margin-bottom: 60px;
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__box {
-    margin-right: 70px;
     text-align: left;
   }
 }
@@ -1759,15 +1736,6 @@ SECTION Постоянные клиенты - end
 /* ================================ 
 Присоединяйтесь, ссылки на соц сети
 ================================ */
-.footer__box:not(:last-child) {
-  margin-right: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .footer__box:not(:last-child) {
-    margin-right: 70px;
-  }
-}
 .footer-custom {
   margin-left: 0;
 }
@@ -1852,7 +1820,7 @@ SECTION Постоянные клиенты - end
 }
 
 .footer-socials-icon {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footer-socials-link:hover .footer-socials-icon,
@@ -2062,13 +2030,7 @@ SECTION Portfolio - start
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
-}
-
-@media screen and (min-width: 480px) {
-  .filter {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .filter {
@@ -2078,14 +2040,13 @@ SECTION Portfolio - start
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .filter {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 480px) {
+
+@media screen and (max-width: 767px) {
   .filter__btn-item {
     margin-bottom: 15px;
   }
@@ -2250,8 +2211,8 @@ CARD LIST ПОРТФОЛИО - start
   }
 }
 
-.card-list__portfolio:hover.portfolio-thumb > .box-action,
-.card-list__portfolio:hover .portfolio-thumb > .box-action {
+.card-list__link:hover.portfolio-thumb > .box-action,
+.card-list__link:hover .portfolio-thumb > .box-action {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -2260,8 +2221,8 @@ CARD LIST ПОРТФОЛИО - start
 /* =================================== 
 декоративный overlay на карточку - END
 ==================================== */
-.card-list__portfolio:hover,
-.card-list__portfolio:focus {
+.card-list__link:hover,
+.card-list__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }

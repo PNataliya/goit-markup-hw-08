@@ -7,7 +7,6 @@
 .hero--overlay {
   @include hero-overlay;
 
-  //   max-width: 480px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -18,7 +17,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    (max-width: 479px) {
+    (max-width: 767px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -33,13 +32,13 @@
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1600;
+    // max-width: 1600;
     padding-top: 200px;
     padding-bottom: 200px;
   }
 
-  @media screen and (min-width: 480px) {
-    max-width: 768px;
+  @media screen and (min-width: 768px) {
+    // max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -51,7 +50,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    (min-width: 480px) {
+    (min-width: 768px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -60,7 +59,7 @@
       url(../images/img_main_page/bg_hero_768@2x.jpeg);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     max-width: 1600px;
     background-image: linear-gradient(
         to right,
@@ -73,7 +72,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
-    (min-width: 768px) {
+    (min-width: 1200px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -83,28 +82,13 @@
   }
 }
 // ============================================
-@media screen and (min-width: 480px) {
-  .hero-container {
-    @include container;
-    width: 450px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .hero-container {
-    @include container;
-    width: 738px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-container {
-    @include container;
-    width: 1200px;
-  }
+.hero-container {
+  @include container;
 }
 
 .hero-container__title {
+  margin-bottom: 30px;
   color: $wight-color;
 }
 

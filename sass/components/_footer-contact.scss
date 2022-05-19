@@ -1,39 +1,51 @@
-.footer__box {
-    display: list-item;
-@media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-    margin-right: 70px;
-    text-align: left;
-}
+.footer__list {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
+.footer__box {
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
 
 .address {
-    margin-bottom: 9px;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    color: $wight-color;
+  margin-bottom: 9px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $wight-color;
 }
 
 .contact {
-    display: block;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-    text-decoration: none;
-    color: $footer-contact-color;
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: $footer-contact-color;
 }
 
 .contact__link {
-    margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .contact__text {
-    font-size: 14px;
-    text-decoration: none;
-    color: $footer-contact-color;
+  font-size: 14px;
+  text-decoration: none;
+  color: $footer-contact-color;
 }
